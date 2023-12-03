@@ -43,6 +43,7 @@
 
 .fundraising_custom-button {
   height: 41px;
+  background: var(--new-white);
   display: inline-flex;
   padding: 0px 8px 0px 0px;
   margin-right: auto;
@@ -53,6 +54,14 @@
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: var(--new-secondary-grey-color-1);
+
+  transition: var(--transition);
+}
+
+.fundraising_custom-button:hover .fundraising_button-left-element__svg,
+.fundraising_custom-button:focus .fundraising_button-left-element__svg {
+  transform: rotate(45deg);
+  transition: var(--transition);
 }
 
 .fundraising_button-left-element {
@@ -65,11 +74,10 @@
   gap: 8px;
   border-radius: 60px;
   background: var(--new-22);
+}
 
-  //   &:hover,
-  //   &:focus {
-  //     background: var(--new-22);
-  //   }
+.fundraising_button-left-element__second {
+  background: var(--new-secondary-grey-color-1);
 }
 
 .fundraising_button-left-element__svg {
