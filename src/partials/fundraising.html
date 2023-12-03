@@ -4,9 +4,10 @@
   </h2>
   <div class="fundraising_flex-box">
     <button type="button" class="fundraising_button-gathering">Зібрано</button>
-    <div class="like-container">
-      <button class="like-button">
+    <div class="fundraising_like-container">
+      <button class="fundraising_like-button">
         <svg
+          class="fundraising_like-button__svg"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
@@ -19,9 +20,34 @@
           />
         </svg>
       </button>
-      <span class="like-count">0</span>
+      <span class="fundraising_like-count">0</span>
     </div>
   </div>
+
+  <form class="fundraising_form">
+    <div class="fundraising_first-form-box">
+      <label for="slider" class="fundraising_title-form">Зібрано коштів</label>
+      <span id="rangeValuePercentages" class="fundraising_percentages-value"
+        >0%</span
+      >
+    </div>
+    <input
+      id="amountRaised"
+      class="fundraising_input"
+      type="range"
+      min="0"
+      max=""
+      name="range"
+      value="0"
+      step="1"
+    />
+    <div class="fundraising_second-form-box">
+      <span id="rangeValue" class="fundraising_value">0₴</span>
+      <p class="fundraising_value-cash">
+        /<span id="valueMany">1000000</span>₴
+      </p>
+    </div>
+  </form>
 
   <div class="fundraising_flex-box-button">
     <button class="fundraising_custom-button">

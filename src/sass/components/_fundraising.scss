@@ -15,6 +15,9 @@
 
 .fundraising_flex-box {
   margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fundraising_button-gathering {
@@ -33,6 +36,85 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.fundraising_like-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.fundraising_like-button {
+  border: none;
+  background: none;
+}
+
+.fundraising_like-button__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundraising_like-count {
+  color: var(--new-black);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+.fundraising_form {
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.fundraising_title-form {
+  color: var(--new-black);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+}
+
+.fundraising_first-form-box {
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.fundraising_input {
+  margin-bottom: 10px;
+
+  height: 5px;
+  border-radius: 6px;
+  background: var(--new-22);
+}
+
+.fundraising_second-form-box {
+  display: flex;
+}
+
+.fundraising_value .fundraising_value-cash {
+  color: var(--new-black);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+}
+
+.fundraising_percentages-value {
+  color: var(--new-black);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
 }
 
 .fundraising_flex-box-button {
