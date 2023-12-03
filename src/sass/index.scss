@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+// // utils
+
+@import './utils/variables';
+// @import "./utils/placeholders";
+
+// // base
+
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+// // components
+
+// @import "./components/image-swiper";
+@import './components/fundraising';
+@import './components/description';
+// @import "./components/reviews";
+// @import "./components/stories";
+@import './components/partnership';

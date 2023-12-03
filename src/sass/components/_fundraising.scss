@@ -1,0 +1,87 @@
+.fundraising_section {
+  margin-bottom: 64px;
+}
+
+.fundraising_title {
+  margin-bottom: 24px;
+
+  color: var(--new-black);
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.fundraising_flex-box {
+  margin-bottom: 32px;
+}
+
+.fundraising_button-gathering {
+  border: none;
+  border-radius: 8px;
+  background: var(--new-22);
+  display: inline-flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  color: var(--new-white);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.fundraising_flex-box-button {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fundraising_custom-button {
+  height: 41px;
+  display: inline-flex;
+  padding: 0px 8px 0px 0px;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 60px;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: var(--new-secondary-grey-color-1);
+}
+
+.fundraising_button-left-element {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 60px;
+  background: var(--new-22);
+
+  //   &:hover,
+  //   &:focus {
+  //     background: var(--new-22);
+  //   }
+}
+
+.fundraising_button-left-element__svg {
+  width: 24px;
+  height: 24px;
+}
+
+.fundraising_button-text {
+  color: var(--new-secondary-grey-color-1);
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
