@@ -54,7 +54,12 @@
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: var(--new-secondary-grey-color-1);
-  //   border: 1px solid var(--new-secondary-grey-color-1);
+}
+
+.partnership_custom-button:hover .partnership_button-left-element__svg,
+.partnership_custom-button:focus .partnership_button-left-element__svg {
+  transform: rotate(45deg);
+  transition: var(--transition);
 }
 
 .partnership_button-left-element {
@@ -67,16 +72,17 @@
   gap: 8px;
   border-radius: 60px;
   background: var(--new-22);
+}
 
-  //   &:hover,
-  //   &:focus {
-  //     background: var(--new-22);
-  //   }
+.partnership_button-left-element__second {
+  background: var(--new-secondary-grey-color-1);
 }
 
 .partnership_button-left-element__svg {
   width: 24px;
   height: 24px;
+
+  transition: var(--transition);
 }
 
 .partnership_button-left-element__phone {
