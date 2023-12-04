@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".fundraising_like-button"),t=document.querySelector(".fundraising_like-count");e&&t&&e.addEventListener("click",(function(){var e=parseInt(t.textContent,10);t.textContent=(e+1).toString()}));var n=document.getElementById("amountRaised"),u=document.getElementById("rangeValuePercentages");document.getElementById("rangeValue");n&&u&&n.addEventListener("input",(function(){var e=n.value+"%";u.textContent=e}))}();
-//# sourceMappingURL=index.3b195f76.js.map

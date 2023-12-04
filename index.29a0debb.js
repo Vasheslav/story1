@@ -1,2 +1,0 @@
-const e=document.querySelector(".fundraising_like-button"),t=document.querySelector(".fundraising_like-count");e&&t&&e.addEventListener("click",(()=>{const e=parseInt(t.textContent,10);t.textContent=(e+1).toString()}));const n=document.getElementById("amountRaised"),o=document.getElementById("rangeValuePercentages");document.getElementById("rangeValue");n&&o&&n.addEventListener("input",(()=>{const e=n.value+"%";o.textContent=e}));
-//# sourceMappingURL=index.29a0debb.js.map
