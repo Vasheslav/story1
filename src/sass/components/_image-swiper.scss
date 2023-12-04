@@ -1,73 +1,74 @@
-.slider__container {
-  position: relative;
-  margin-left: 200px;
-}
+.image-swiper_section {
+  margin-bottom: 64px;
 
-.slider {
-  max-width: 310px;
-  flex: 0 0 310px;
-  margin-left: unset;
-  margin-right: unset;
-}
-
-/* дополнительные стили для этого примера */
-.slider__items {
-  counter-reset: slide;
-}
-
-.slider__item {
-  counter-increment: slide;
   display: flex;
-  background-color: #eee;
+  flex-direction: column;
+  align-items: center;
 }
 
-.slider__item::before {
-  content: counter(slide);
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #fff;
-  font-style: italic;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.slider img {
-  max-width: 100%;
-  height: auto;
-}
-
-.slider__thumbnails {
-  position: absolute;
+.image-swiper_gallery {
   display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-  width: 150px;
-  left: -175px;
-  top: 0;
-  height: 100%;
-}
+  gap: 10px;
 
-.slider__thumbnails-item {
-  line-height: 0;
-  max-width: 52px;
-  margin: 0 10px 10px 0;
-  opacity: 0.5;
-  border-radius: 8px;
   overflow: hidden;
-  transition: 0.15s opacity ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    gap: 29px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 20px;
+  }
 }
 
-.slider__thumbnails-item.active {
-  opacity: 1;
+// .large-image-container {
+//   margin-bottom: 20px;
+// }
+
+.image-swiper_large-image {
+  margin-bottom: 20px;
+
+  width: 346px;
+  height: 177px;
+
+  @media screen and (min-width: 768px) {
+    width: 680px;
+    height: 363px;
+
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 651px;
+    height: 346px;
+
+    margin-bottom: 11px;
+  }
 }
 
-.slider__thumbnails-item:hover {
-  opacity: 1;
+.image-swiper_navigation__svg {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    margin-left: auto;
+
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 1px;
+  }
 }
 
-.slider__thumbnails-item > img {
-  display: inline-block;
-  width: 100%;
-  height: auto;
+.thumbnail {
+  width: 100px;
+  height: 75px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 148px;
+    height: 111px;
+  }
 }

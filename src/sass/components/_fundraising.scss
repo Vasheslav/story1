@@ -2,7 +2,7 @@
   margin-bottom: 64px;
 }
 
-.fundraising_title {
+.fundraising_title-first {
   margin-bottom: 24px;
 
   color: var(--new-black);
@@ -11,6 +11,26 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.fundraising_title-second {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    margin-bottom: 24px;
+
+    color: var(--new-black);
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
 }
 
 .fundraising_flex-box {
@@ -18,6 +38,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
 }
 
 .fundraising_button-gathering {
@@ -69,6 +93,10 @@
 
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
 }
 
 .fundraising_title-form {

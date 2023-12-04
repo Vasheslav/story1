@@ -1,0 +1,9 @@
+.flex-conteiner {
+  margin-top: 20px;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: start;
+    gap: 31px;
+  }
+}
